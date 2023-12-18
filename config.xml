@@ -12,4 +12,9 @@
     <!-- Google maps -->
     <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="" />
     <preference name="GOOGLE_MAPS_IOS_API_KEY" value="" />
+
+    <platform name="android">
+        <preference name="android-targetSdkVersion" value="33" />
+        <preference name="android-minSdkVersion" value="26" />
+    </platform>
 </widget>
