@@ -7,8 +7,23 @@
         document.addEventListener("deviceready", function() {
             var div = document.getElementById("map_canvas");
 
+            var centreOfCornwall = {
+                lat: 50.419511,
+                lng: -4.855957
+            };
+
+            var mapOptions = {
+                controls:{
+                    myLocationButton: true,
+                    myLocation: true   // (blue dot)
+                },
+                camera:{
+                    target: centreOfCornwall
+                }
+            };
+
             // Create a Google Maps native view under the map_canvas div.
-            var map = plugin.google.maps.Map.getMap(div);
+            var map = plugin.google.maps.Map.getMap(div, mapOptions);
 
             // If you click the button, do something...
             var button = document.getElementById("button");
