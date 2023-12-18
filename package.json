@@ -13,6 +13,7 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "devDependencies": {
+    "cordova-android": "^12.0.1",
     "cordova-ios": "^6.3.0",
     "cordova-plugin-googlemaps": "github:dpa99c/cordova-plugin-googlemaps",
     "cordova-plugin-googlemaps-sdk": "github:mapsplugin/cordova-plugin-googlemaps-sdk"
@@ -22,7 +23,8 @@
       "cordova-plugin-googlemaps": {}
     },
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }
